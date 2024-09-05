@@ -1,0 +1,36 @@
+@import 'index';
+
+.nav-bar {
+    border-radius: 0 0 12px 12px;
+}
+
+.nav-link {
+    font-size: 1.6em;
+    color: $lightgray;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+
+    &:hover {
+        color: $lightgrayhover;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1em
+    }
+
+    &_socialicon {
+        color: $lightgray;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        width: 30px;
+        height: 100%;
+
+        &:hover {
+            color: $lightgrayhover;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 16px;
+        }
+    }
+}

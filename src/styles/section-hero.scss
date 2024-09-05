@@ -1,0 +1,20 @@
+@import 'index';
+
+.section-hero {
+  height: 100vh;
+  max-height: 100%;
+  background-color: $darkColor;
+
+  .btn-projects {
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.16);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.16);
+    box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.16);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.08);
+      -moz-box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.08);
+      box-shadow: 0px 0px 20px 3px rgba(45, 255, 196, 0.08);
+    }
+  }
+}
