@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Container, Text, Flex, Heading, Button, Image  } from '@chakra-ui/react';
-import '../styles/section-hero.scss'
 
-export default function HeroSection() {
+export default function CaseStudies() {
   return (
     <>
       <Box position={'relative'} w={'100%'} className='section-hero'>
