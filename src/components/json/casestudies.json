@@ -1,0 +1,26 @@
+{
+    "1": {
+      "mainText": "Anna Notara is an unstoppable mind and a multi-talented entrepreneur full of knowledge and energy and innovative ideas. With strong roots originating from the island of Karpathos in the Dodecanese. Mother of two children who do not stops evolving to the business challenges of the times.",
+      "badgeText": "Branding",
+      "buttonText": "View the case of Annanotara.com",
+      "imgSrc" : "http://localhost:3000/fossam-portfolio/images/annanotara_thumb.jpg",
+      "imageAlt": "case of Anna Notara website",
+      "badgeColor": "orange",
+      "websiteLink": "https://annanotara.com",
+      "modalTextA" : "Anna Notara is an unstoppable mind and a multi-talented entrepreneur full of knowledge and energy and innovative ideas. With strong roots originating from the island of Karpathos in the Dodecanese. Mother of two children who do not stops evolving to the business challenges of the times.",
+      "modalTextB" : "I transformed the vision, the values and the project into a beautiful project",
+      "modalStacks": ["Wordpress", "PHP", "Javascript/jQuery", "Ajax","Sass"]
+    },
+    "2": {
+      "mainText": "Roula Kotsilati is a Chartered Architect from the Royal Institute of British Architects RIBA. She was awarded as one of “Europe’s most promising and emerging architects“ at the 40 UNDER 40 Awards in 2016 by the European Centre for Architecture Art Design and Urban Studies.",
+      "badgeText": "Architecture",
+      "buttonText": "View the case of RoulaKotsilati.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/kotsilati_thumb.jpg",
+      "imageAlt": "case of RoulaKotsilati.gr",
+      "badgeColor": "teal",
+      "websiteLink": "https://roulakotsilati.gr",
+      "modalTextA" : "Roula Kotsilati is a Chartered Architect from the Royal Institute of British Architects RIBA. She was awarded as one of “Europe’s most promising and emerging architects“ at the 40 UNDER 40 Awards in 2016 by the European Centre for Architecture Art Design and Urban Studies.",
+      "modalTextB" : "I love the lines that Roula Kotsilati uses, so I design and develop a website that reflect these lines.",
+      "modalStacks": ["Wordpress", "PHP", "Javascript/jQuery", "Ajax","Sass"]
+    }
+  }

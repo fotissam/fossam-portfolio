@@ -91,7 +91,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Stack position={"relative"} w={"100%"} bg={"#1B1B1B"} py={"40px"}>
+    <Stack position={"relative"} w={"100%"} bg={"#1B1B1B"} py={"40px"} name="contactMe">
       <Container
         maxW={"1280px"}
         display={"flex"}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Text, Flex, Heading, Button, Image, Badge, Stack } from "@chakra-ui/react";
+import { Box, Container, Text, Flex, Link, Button, Image, Badge, Stack } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function CaseStudiesBox(props) {
@@ -24,19 +24,29 @@ export default function CaseStudiesBox(props) {
             </Badge>
 
             <Text color={"#000"}>{props.mainText}</Text>
-
-            <Button colorScheme={props.badgeColor} size="md" alignSelf="flex-start" rightIcon={<ArrowForwardIcon />}>
-              {props.buttonText}
-            </Button>
+              <Button
+                colorScheme={props.badgeColor}
+                size="md"
+                alignSelf="flex-start"
+                rightIcon={<ArrowForwardIcon />}
+                onClick={props.onClick}
+              >
+                {props.buttonText}
+              </Button>
           </Flex>
-          <Flex width={{ base: "100%", md: "50%" }} justify={{ base: "center", md: props.imagePosition }}>
-            <Image
-              src={props.imageSrc}
-              alt={props.imageAlt}
-              width={'500px'}
-              height={{ base: "200px", md: "300px" }}
-              objectFit="cover"
-            />
+          <Flex
+            width={{ base: "100%", md: "50%" }}
+            justify={{ base: "center", md: props.imagePosition }}
+          >
+            <Link href={props.imageLink} isExternal>
+              <Image
+                src={props.imageSrc}
+                alt={props.imageAlt}
+                width={"500px"}
+                height={{ base: "200px", md: "300px" }}
+                objectFit="cover"
+              />
+            </Link>
           </Flex>
         </Flex>
       </Stack>

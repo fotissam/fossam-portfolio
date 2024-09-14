@@ -1,11 +1,39 @@
-import React from "react";
-import { Container, Text, Flex, Heading, HStack, Stack } from "@chakra-ui/react";
+import React, { useState } from "react";
+import {
+  Container,
+  Text,
+  Flex,
+  Heading,
+  HStack,
+  Stack,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+} from "@chakra-ui/react";
 import CaseStudiesBox from "./parts/CaseStudiesBox";
+import CaseStudyModal from "./parts/CaseStudyModal";
+import data from "./json/casestudies.json";
 
 export default function CaseStudies() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [caseNumber, setIsCaseNumber] = useState(null);
+
+  const handleOpenModal = (number) => {
+    setIsCaseNumber(number);
+    onOpen();
+  };
+
+  const currentCaseStudy = caseNumber !== null ? data[caseNumber] : {};
+
   return (
     <>
-      <Stack position={"relative"} w={"100%"} bg={"#fff"}>
+      <Stack position={"relative"} w={"100%"} bg={"#fff"} py={"50px"} name="RecentWorks">
         <Container
           maxW={"1280px"}
           display={"flex"}
@@ -30,36 +58,52 @@ export default function CaseStudies() {
               align={"center"}
               maxW={"800px"}
             >
-              Hello, I'm a web developer and designer from Athens, Greece. create bespoke websites
+              Hello, I'm a web developer and designer from Athens, Greece. I create bespoke websites
               to help people go further online.
             </Text>
           </HStack>
-          <Flex direction={'column'} gap={'60px'}>
+          <Flex direction={"column"} gap={"60px"}>
             <CaseStudiesBox
-              mainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              mainText={data["1"].mainText}
               badgeColor="orange"
-              badgeText="Branding"
+              badgeText={data["1"].badgeText}
               descDirection="row"
               mobDirection="column"
-              buttonText="View the case of Annanotara.com"
+              buttonText={data["1"].buttonText}
+              imageLink={data["1"].websiteLink}
               imageSrc="http://localhost:3000/fossam-portfolio/images/annanotara_thumb.jpg"
               imagePosition="flex-end"
-              imageAlt="case of Annanotara.com"
+              imageAlt={data["1"].imageAlt}
+              onClick={() => handleOpenModal(1)}
             />
             <CaseStudiesBox
-              mainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              mainText={data["2"].mainText}
               badgeColor="teal"
-              badgeText="Architecture"
+              badgeText={data["2"].badgeText}
               descDirection="row-reverse"
               mobDirection="column"
-              buttonText="View the case of RoulaKotsilati"
-              imageSrc="http://localhost:3000/fossam-portfolio/images/kotsilati_thumb.jpg"
+              buttonText={data["2"].buttonText}
+              imageLink={data["2"].websiteLink}
+              imageSrc="https://fotissam.github.io/fossam-portfolio/images/kotsilati_thumb.jpg"
               imagePosition="flex-start"
-              imageAlt="case of RoulaKotsilati"
+              imageAlt={data["2"].imageAlt}
+              onClick={() => handleOpenModal(2)}
             />
           </Flex>
         </Container>
       </Stack>
+      <CaseStudyModal
+        isOpen={isOpen}
+        onClose={onClose}
+        modalHeading={currentCaseStudy.buttonText || "Case Study"}
+        modalBody={currentCaseStudy.mainText || "No details available for now"}
+        colorScheme={currentCaseStudy.badgeColor || "gray"}
+        modalTextB={currentCaseStudy.modalTextB || "No text here"}
+        imageLink={currentCaseStudy.websiteLink || "#"}
+        buttonText="Visit the website"
+        stacks={currentCaseStudy.modalStacks || "#"}
+        
+      />
     </>
   );
 }

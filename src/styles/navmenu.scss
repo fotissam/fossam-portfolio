@@ -1,17 +1,20 @@
-@import 'index';
+$darkColor: #1B1B1B;
+$lightgray: #9C9C9C;
+$lightgrayhover: #cbcaca;
 
 .nav-bar {
     border-radius: 0 0 12px 12px;
 }
 
 .nav-link {
-    font-size: 1.6em;
-    color: $lightgray;
+    font-size: 1.2em;
+    color: #9C9C9C;
     transition: all 0.3s ease-in-out;
     opacity: 0.8;
+    cursor: pointer;
 
     &:hover {
-        color: $lightgrayhover;
+        color: #cbcaca;
     }
 
     @media screen and (max-width: 768px) {
@@ -19,14 +22,14 @@
     }
 
     &_socialicon {
-        color: $lightgray;
+        color: #9C9C9C;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         width: 30px;
         height: 100%;
 
         &:hover {
-            color: $lightgrayhover;
+            color: #cbcaca;
         }
 
         @media screen and (max-width: 768px) {

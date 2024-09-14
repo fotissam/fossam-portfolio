@@ -5,7 +5,7 @@ import '../styles/section-hero.scss'
 export default function HeroSection() {
   return (
     <>
-      <Box position={'relative'} w={'100%'} className='section-hero'>
+      <Box position={'relative'} w={'100%'} className='section-hero' name="heroSection">
         <Container maxW={'1280px'} display={'flex'} height={'100%'}>
           <Flex marginY={'auto'} direction={{ base: 'column-reverse', md: 'row' }} gap={{ base: '50px', md: '50px' }} w={'100%'} align={'center'}>
             <Flex direction={'column'} gap={5} w={{ base: '100%', md: '75%' }}>
@@ -16,7 +16,7 @@ export default function HeroSection() {
               </Button>
             </Flex>
             <Flex direction={'column'} gap={5} w={{ base: '100%', md: '75%' }} align={'center'}>
-              <Image borderRadius={'50%'} boxSize={{ base: '200px', md: '400px' }} src='https://images.pexels.com/photos/11704943/pexels-photo-11704943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='Dan Abramov' />
+              <Image borderRadius={'50%'} boxSize={{ base: '200px', md: '400px' }} src='%PUBLIC_URL%/images/fotis_samaridis_profile.jpg' alt='Fotis Samaridis Profile Pic' />
 
 
             </Flex>
