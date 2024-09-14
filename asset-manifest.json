@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fossam-portfolio/static/css/main.f5e6b0d0.css",
-    "main.js": "/fossam-portfolio/static/js/main.64abeea8.js",
+    "main.css": "/fossam-portfolio/static/css/main.a480742e.css",
+    "main.js": "/fossam-portfolio/static/js/main.e7038a0e.js",
     "index.html": "/fossam-portfolio/index.html",
-    "main.f5e6b0d0.css.map": "/fossam-portfolio/static/css/main.f5e6b0d0.css.map",
-    "main.64abeea8.js.map": "/fossam-portfolio/static/js/main.64abeea8.js.map"
+    "main.a480742e.css.map": "/fossam-portfolio/static/css/main.a480742e.css.map",
+    "main.e7038a0e.js.map": "/fossam-portfolio/static/js/main.e7038a0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5e6b0d0.css",
-    "static/js/main.64abeea8.js"
+    "static/css/main.a480742e.css",
+    "static/js/main.e7038a0e.js"
   ]
 }
