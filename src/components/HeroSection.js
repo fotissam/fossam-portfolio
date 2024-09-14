@@ -16,7 +16,7 @@ export default function HeroSection() {
               </Button>
             </Flex>
             <Flex direction={'column'} gap={5} w={{ base: '100%', md: '75%' }} align={'center'}>
-              <Image borderRadius={'50%'} boxSize={{ base: '200px', md: '400px' }} src='%PUBLIC_URL%/images/fotis_samaridis_profile.jpg' alt='Fotis Samaridis Profile Pic' />
+              <Image borderRadius={'50%'} boxSize={{ base: '200px', md: '400px' }} src='https://fotissam.github.io/fossam-portfolio/images/fotis_samaridis_profile.jpg' alt='Fotis Samaridis Profile Pic' />
 
 
             </Flex>
