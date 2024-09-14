@@ -32,7 +32,7 @@ export default function CaseStudiesBox(props) {
           <Flex width={{ base: "100%", md: "50%" }} justify={{ base: "center", md: props.imagePosition }}>
             <Image
               src={props.imageSrc}
-              alt="Dan Abramov"
+              alt={props.imageAlt}
               width={'500px'}
               height={{ base: "200px", md: "300px" }}
               objectFit="cover"
