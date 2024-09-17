@@ -1,55 +1,56 @@
-import React from "react";
-import { Box, Container, Text, Flex, Link, Button, Image, Badge, Stack } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import React, { useState } from "react";
+import { Stack, Image, Link, Button } from "@chakra-ui/react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function CaseStudiesBox(props) {
-  return (
-    <>
-      <Stack position={"relative"}>
-        <Flex direction={{ base: props.mobDirection, md: props.descDirection }} gap={10}>
-          <Flex
-            direction={"column"}
-            justifyContent={"space-between"}
-            gap={{ base: "0.8em", md: "1em" }}
-            width={{ base: "100%", md: "50%" }}
-          >
-            <Badge
-              colorScheme={props.badgeColor}
-              alignSelf="flex-start"
-              display={"inline-block"}
-              p={2}
-              borderRadius={"6px"}
-            >
-              {props.badgeText}
-            </Badge>
+  const [showHoverBox, setShowHoverBox] = useState(false);
 
-            <Text color={"#000"}>{props.mainText}</Text>
-              <Button
-                colorScheme={props.badgeColor}
-                size="md"
-                alignSelf="flex-start"
-                rightIcon={<ArrowForwardIcon />}
-                onClick={props.onClick}
-              >
-                {props.buttonText}
-              </Button>
-          </Flex>
-          <Flex
-            width={{ base: "100%", md: "50%" }}
-            justify={{ base: "center", md: props.imagePosition }}
-          >
-            <Link href={props.imageLink} isExternal>
-              <Image
-                src={props.imageSrc}
-                alt={props.imageAlt}
-                width={"500px"}
-                height={{ base: "200px", md: "300px" }}
-                objectFit="cover"
-              />
-            </Link>
-          </Flex>
-        </Flex>
-      </Stack>
-    </>
+  const handleShowBox = () => {
+    setShowHoverBox(true);
+  };
+
+  const handleHideBox = () => {
+    setShowHoverBox(false);
+  };
+
+  return (
+    <Stack
+      position={"relative"}
+      onMouseEnter={handleShowBox}
+      onMouseLeave={handleHideBox}
+      overflow="hidden" // ensures the hover box doesn’t overflow
+    >
+      <Image
+        src={props.imageSrc}
+        alt={props.imageAlt}
+        width={"100%"}
+        height={{ base: "200px", md: "100%" }}
+        objectFit="cover"
+        transition="transform 0.4s ease"
+        transform={showHoverBox ? "scale(1.1)" : "scale(1)"}
+        filter={showHoverBox ? "grayscale(0%)" : "grayscale(100%)"}
+      />
+      <Link
+        onClick={props.onClick}
+        position={"absolute"}
+        top={0}
+        left={0}
+        w={"100%"}
+        h={"100%"}
+        bgColor={"rgba(0, 0, 0, 0.7)"}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        color="white"
+        opacity={showHoverBox ? 1 : 0}
+        transition="opacity 0.6s ease"
+        textDecoration={'none'}
+        _hover={{textDecoration: 'none'}}
+      >
+        <Button display={'flex'} alignContent={'center'} variant={"unstyled"} rightIcon={<IoIosArrowRoundForward size={20}/>} textDecoration={'none'}>
+          {props.buttonText}
+        </Button>
+      </Link>
+    </Stack>
   );
 }
