@@ -24,5 +24,18 @@
       "modalTextB" : "I love the lines that Roula Kotsilati uses, so I design and develop a website that reflect these lines.",
       "modalStacks": ["Wordpress", "PHP", "Javascript/jQuery", "Ajax","Sass"],
       "designLink": ""
+    },
+    "3": {
+      "mainText": "The website porterservices.gr offers professional porter services at Athens International Airport. They assist passengers with their luggage from arrival to departure, ensuring a smooth and stress-free travel experience.",
+      "badgeText": "E-commerce",
+      "buttonText": "About porterservices.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/porterservices_thumb.jpg",
+      "imageAlt": "case of porterservices.gr",
+      "badgeColor": "yellow",
+      "websiteLink": "https://porterservices.gr",
+      "modalTextA" : "The website porterservices.gr offers professional porter services at Athens International Airport. They assist passengers with their luggage from arrival to departure, ensuring a smooth and stress-free travel experience. ",
+      "modalTextB" : "I made a custom booking system with Woocomerce, so passengers can book services. This system notify both admin and passenger about the location , the time, the luggage etc. of service",
+      "modalStacks": ["Wordpress", "Woocomerce","PHP", "Javascript/jQuery", "Ajax","Sass"],
+      "designLink": "https://pixso.net/app/editor/_EvJ6fXFMTIssNrqNNmGFw?icon_type=1&page-id=1%3A2"
     }
   }

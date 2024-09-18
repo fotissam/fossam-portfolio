@@ -89,6 +89,22 @@ export default function CaseStudies() {
                 onClick={() => handleOpenModal(2)}
               />
             </GridItem>
+            <GridItem w="100%" h="100%" bg="blue.500">
+              <CaseStudiesBox
+                mainText={data["3"].mainText}
+                badgeColor="teal"
+                badgeText={data["3"].badgeText}
+                descDirection="row-reverse"
+                mobDirection="column"
+                buttonText={data["3"].buttonText}
+                imageLink={data["3"].websiteLink}
+                imageSrc={data["3"].imgSrc}
+                imagePosition="flex-start"
+                imageAlt={data["3"].imageAlt}
+                designLink={data["3"].designLink}
+                onClick={() => handleOpenModal(3)}
+              />
+            </GridItem>
           </Grid>
         </Container>
       </Stack>
