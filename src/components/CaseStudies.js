@@ -65,7 +65,7 @@ export default function CaseStudies() {
                 mobDirection="column"
                 buttonText={data["1"].buttonText}
                 imageLink={data["1"].websiteLink}
-                imageSrc="http://localhost:3000/fossam-portfolio/images/annanotara_thumb.jpg"
+                imageSrc={data["1"].imgSrc}
                 imagePosition="flex-end"
                 imageAlt={data["1"].imageAlt}
                 designLink={data["1"].designLink}
