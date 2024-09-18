@@ -1,23 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  Box,
-  Button,
-  FormControl,
-  FormErrorMessage,
-  FormLabel,
-  Input,
-  Textarea,
   Stack,
   Container,
-  useToast,
   Heading,
-  FormHelperText,
-  Flex,
-  Text,
-  Link,
 } from "@chakra-ui/react";
-import { IoIosSend } from "react-icons/io";
-import emailjs from "emailjs-com";
 
 export default function Footer() {
 
