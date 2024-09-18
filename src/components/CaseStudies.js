@@ -61,12 +61,9 @@ export default function CaseStudies() {
                 mainText={data["1"].mainText}
                 badgeColor="orange"
                 badgeText={data["1"].badgeText}
-                descDirection="row"
-                mobDirection="column"
                 buttonText={data["1"].buttonText}
                 imageLink={data["1"].websiteLink}
                 imageSrc={data["1"].imgSrc}
-                imagePosition="flex-end"
                 imageAlt={data["1"].imageAlt}
                 designLink={data["1"].designLink}
                 onClick={() => handleOpenModal(1)}
@@ -77,12 +74,9 @@ export default function CaseStudies() {
                 mainText={data["2"].mainText}
                 badgeColor="teal"
                 badgeText={data["2"].badgeText}
-                descDirection="row-reverse"
-                mobDirection="column"
                 buttonText={data["2"].buttonText}
                 imageLink={data["2"].websiteLink}
                 imageSrc="https://fotissam.github.io/fossam-portfolio/images/kotsilati_thumb.jpg"
-                imagePosition="flex-start"
                 imageAlt={data["2"].imageAlt}
                 designLink={data["2"].designLink}
                 onClick={() => handleOpenModal(2)}
@@ -110,7 +104,6 @@ export default function CaseStudies() {
                 buttonText={data["4"].buttonText}
                 imageLink={data["4"].websiteLink}
                 imageSrc={data["4"].imgSrc}
-                imagePosition="flex-start"
                 imageAlt={data["4"].imageAlt}
                 designLink={data["4"].designLink}
                 onClick={() => handleOpenModal(4)}
@@ -124,7 +117,6 @@ export default function CaseStudies() {
                 buttonText={data["5"].buttonText}
                 imageLink={data["5"].websiteLink}
                 imageSrc={data["5"].imgSrc}
-                imagePosition="flex-start"
                 imageAlt={data["5"].imageAlt}
                 designLink={data["5"].designLink}
                 onClick={() => handleOpenModal(5)}
