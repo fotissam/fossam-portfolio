@@ -53,13 +53,20 @@ export default function CaseStudyModal({
               </Text>
               <Box>{modalBody}</Box>
               <Box>{modalTextB}</Box>
+            </Flex>
+            <Flex width={{ base: "100%", md: "40%" }} direction={"column"}>
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={"500px"}
+                objectFit="contain"
+              />
               <Box mt={2}>
                 <Text
                   as={"code"}
                   color={"#9C9C9C"}
                   fontSize={{ base: "14px", md: "16px" }}
                   align={"center"}
-                  maxW={"900px"}
                 >
                   Stack:
                 </Text>
@@ -71,15 +78,6 @@ export default function CaseStudyModal({
                   ))}
                 </Box>
               </Box>
-            </Flex>
-            <Flex width={{ base: "100%", md: "40%" }} direction={"column"}>
-              <Image
-                src={imageSrc}
-                alt={imageAlt}
-                width={"500px"}
-                height={{ base: "200px", md: "300px" }}
-                objectFit="contain"
-              />
             </Flex>
           </Flex>
         </ModalBody>

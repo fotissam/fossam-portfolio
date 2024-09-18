@@ -2,10 +2,10 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import HeroSection from "./components/HeroSection";
-import AboutPage from "./components/AboutPage";
 import NavMenu from "./components/NavMenu";
 import CaseStudies from "./components/CaseStudies";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <HeroSection />
       <CaseStudies />
       <ContactForm />
+      <Footer />
     </Box>
   );
 }

@@ -106,7 +106,7 @@ export default function ContactForm() {
           as={"h2"}
           fontSize={{ base: "2em", md: "3em" }}
         >
-          Contact Me
+          Let's create something amazing together!
         </Heading>
         <Flex direction={{ base: "column-reverse", md: "row" }} gap={10}>
           <Flex direction={"column"} width={{ base: "100%", md: "30%" }}>
@@ -173,7 +173,7 @@ export default function ContactForm() {
 
                 {/* Submit Button */}
                 <Button
-                mt={10}
+                  mt={10}
                   type="submit"
                   color="#fff"
                   borderColor={"#319795"}
@@ -200,9 +200,10 @@ export default function ContactForm() {
               align={"center"}
               maxW={"800px"}
             >
-              Hey! Thanx for reaching this point of my page. I'm sure you have questions about me,
-              so don't be hesitate to contant me from that form on the left or by dropping an email
-              to{" "}
+              I'm always excited to collaborate on new and innovative projects. I'm ready to bring
+              your ideas to life. Whether you need a stunning website, a seamless user experience,
+              or captivating visuals, I've got you covered.<br></br>
+              Looking forward to hearing from you! Please use the form on the left or drop an email to{" "}
               <Link color="teal.500" href="mailto:f.samaridis@gmail.com">
                 f.samaridis@gmail.com
               </Link>

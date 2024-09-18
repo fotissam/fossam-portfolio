@@ -51,13 +51,12 @@ export default function CaseStudies() {
               align={"center"}
               maxW={"800px"}
             >
-              Hello, I'm a web developer and designer from Athens, Greece. I create bespoke websites
-              to help people go further online.
+              Check out my latest projects and see what I've been up to.
             </Text>
           </HStack>
           <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }} gap={6}>
 
-            <GridItem w="100%" h="100%" bg="blue.500">
+            <GridItem w="100%" h="100%" bg="gray.500">
               <CaseStudiesBox
                 mainText={data["1"].mainText}
                 badgeColor="orange"
@@ -73,7 +72,7 @@ export default function CaseStudies() {
                 onClick={() => handleOpenModal(1)}
               />
             </GridItem>
-            <GridItem w="100%" h="100%" bg="blue.500">
+            <GridItem w="100%" h="100%" bg="gray.500">
               <CaseStudiesBox
                 mainText={data["2"].mainText}
                 badgeColor="teal"
@@ -89,13 +88,11 @@ export default function CaseStudies() {
                 onClick={() => handleOpenModal(2)}
               />
             </GridItem>
-            <GridItem w="100%" h="100%" bg="blue.500">
+            <GridItem w="100%" h="100%" bg="gray.500">
               <CaseStudiesBox
                 mainText={data["3"].mainText}
                 badgeColor="teal"
                 badgeText={data["3"].badgeText}
-                descDirection="row-reverse"
-                mobDirection="column"
                 buttonText={data["3"].buttonText}
                 imageLink={data["3"].websiteLink}
                 imageSrc={data["3"].imgSrc}
@@ -103,6 +100,62 @@ export default function CaseStudies() {
                 imageAlt={data["3"].imageAlt}
                 designLink={data["3"].designLink}
                 onClick={() => handleOpenModal(3)}
+              />
+            </GridItem>
+            <GridItem w="100%" h="100%" bg="gray.500">
+              <CaseStudiesBox
+                mainText={data["4"].mainText}
+                badgeColor={data["4"].badgeColor}
+                badgeText={data["4"].badgeText}
+                buttonText={data["4"].buttonText}
+                imageLink={data["4"].websiteLink}
+                imageSrc={data["4"].imgSrc}
+                imagePosition="flex-start"
+                imageAlt={data["4"].imageAlt}
+                designLink={data["4"].designLink}
+                onClick={() => handleOpenModal(4)}
+              />
+            </GridItem>
+            <GridItem w="100%" h="100%" bg="gray.500">
+              <CaseStudiesBox
+                mainText={data["5"].mainText}
+                badgeColor={data["5"].badgeColor}
+                badgeText={data["5"].badgeText}
+                buttonText={data["5"].buttonText}
+                imageLink={data["5"].websiteLink}
+                imageSrc={data["5"].imgSrc}
+                imagePosition="flex-start"
+                imageAlt={data["5"].imageAlt}
+                designLink={data["5"].designLink}
+                onClick={() => handleOpenModal(5)}
+              />
+            </GridItem>
+            <GridItem w="100%" h="100%" bg="gray.500">
+              <CaseStudiesBox
+                mainText={data["6"].mainText}
+                badgeColor={data["6"].badgeColor}
+                badgeText={data["6"].badgeText}
+                buttonText={data["6"].buttonText}
+                imageLink={data["6"].websiteLink}
+                imageSrc={data["6"].imgSrc}
+                imagePosition="flex-start"
+                imageAlt={data["6"].imageAlt}
+                designLink={data["6"].designLink}
+                onClick={() => handleOpenModal(6)}
+              />
+            </GridItem>
+            <GridItem w="100%" h="100%" bg="gray.500">
+              <CaseStudiesBox
+                mainText={data["7"].mainText}
+                badgeColor={data["7"].badgeColor}
+                badgeText={data["7"].badgeText}
+                buttonText={data["7"].buttonText}
+                imageLink={data["7"].websiteLink}
+                imageSrc={data["7"].imgSrc}
+                imagePosition="flex-start"
+                imageAlt={data["7"].imageAlt}
+                designLink={data["7"].designLink}
+                onClick={() => handleOpenModal(7)}
               />
             </GridItem>
           </Grid>

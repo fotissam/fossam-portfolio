@@ -22,7 +22,7 @@
       "websiteLink": "https://roulakotsilati.gr",
       "modalTextA" : "Roula Kotsilati is a Chartered Architect from the Royal Institute of British Architects RIBA. She was awarded as one of “Europe’s most promising and emerging architects“ at the 40 UNDER 40 Awards in 2016 by the European Centre for Architecture Art Design and Urban Studies.",
       "modalTextB" : "I love the lines that Roula Kotsilati uses, so I design and develop a website that reflect these lines.",
-      "modalStacks": ["Wordpress", "PHP", "Javascript/jQuery", "Ajax","Sass"],
+      "modalStacks": ["Wordpress", "PHP", "Javascript/jQuery", "Ajax","Scss"],
       "designLink": ""
     },
     "3": {
@@ -34,8 +34,60 @@
       "badgeColor": "yellow",
       "websiteLink": "https://porterservices.gr",
       "modalTextA" : "The website porterservices.gr offers professional porter services at Athens International Airport. They assist passengers with their luggage from arrival to departure, ensuring a smooth and stress-free travel experience. ",
-      "modalTextB" : "I made a custom booking system with Woocomerce, so passengers can book services. This system notify both admin and passenger about the location , the time, the luggage etc. of service",
-      "modalStacks": ["Wordpress", "Woocomerce","PHP", "Javascript/jQuery", "Ajax","Sass"],
-      "designLink": "https://pixso.net/app/editor/_EvJ6fXFMTIssNrqNNmGFw?icon_type=1&page-id=1%3A2"
+      "modalTextB" : "I made a custom booking system with Woocomerce, so passengers can book services. This system notify both admin and passenger about the location , the time, the luggage etc. of service. The project is made with collaboration with nookstudio.gr",
+      "modalStacks": ["Wordpress", "Woocomerce","PHP", "Javascript/jQuery", "Ajax","Scss"],
+      "designLink": "https://pixso.net/app/editor/_EvJ6fXFMTIssNrqNNmGFw"
+    },
+    "4": {
+      "mainText": "SeaAdventure.gr offers a variety of sea experiences around Chania, Crete. They provide boat rentals and private cruises, allowing you to explore the beautiful Cretan coast at your own pace",
+      "badgeText": "E-commerce",
+      "buttonText": "About seadventure.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/seaadventure_thumb.jpg",
+      "imageAlt": "case of seadventure.gr",
+      "badgeColor": "yellow",
+      "websiteLink": "https://seadventure.gr",
+      "modalTextA" : "SeaAdventure.gr offers a variety of sea experiences around Chania, Crete. They provide boat rentals and private cruises, allowing you to explore the beautiful Cretan coast at your own pace",
+      "modalTextB" : "Using modern web technologies, I ensured the site is responsive and visually appealing on all devices. I integrated features like boat rental bookings, private cruise scheduling. The project is made with collaboration with nookstudio.gr",
+      "modalStacks": ["Wordpress", "React","PHP", "Javascript/jQuery", "Ajax","Scss"],
+      "designLink": "https://pixso.net/app/editor/wI5NvjFjesCbCA8Nejbx1g"
+    },
+    "5": {
+      "mainText": "LGB2BAcademy.gr is a platform designed for professionals to access LG's B2B training and seminars. It allows users to register for events, access resources, and stay updated on the latest offerings from LG",
+      "badgeText": "Training",
+      "buttonText": "About lgb2bacademy.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/lgacademy_thumb.jpg",
+      "imageAlt": "case of lgb2bacademy.gr",
+      "badgeColor": "cyan",
+      "websiteLink": "https://lgb2bacademy.gr/",
+      "modalTextA" : "LGB2BAcademy.gr is a platform designed for professionals to access LG's B2B training and seminars. It allows users to register for events, access resources, and stay updated on the latest offerings from LG",
+      "modalTextB" : "I developed LGB2BAcademy.gr to serve as a comprehensive platform for professionals to access LG's B2B training and seminars. I ensured the site is responsive and user-friendly, allowing users to easily register for events, access resources, and stay updated on the latest offerings from LG, with the power of Fullcalendar.io library. Design from Thanos Matsoukas.",
+      "modalStacks": ["Wordpress","Fullcalendar.io", "Javascript/jQuery", "Ajax","Scss", "PHP"],
+      "designLink": "https://pixso.net/app/editor/6yUjB4XS4JJJJwL0HUofhg"
+    },
+    "6": {
+      "mainText": "Gotogrow.gr is a full-service digital agency focused on driving leads and revenue for businesses through a range of digital marketing services",
+      "badgeText": "Digital Agency",
+      "buttonText": "About gotogrow.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/gotogrow_thumb.jpg",
+      "imageAlt": "case of gotogrow.gr",
+      "badgeColor": "purple",
+      "websiteLink": "https://gotogrow.gr/",
+      "modalTextA" : "Gotogrow.gr is a full-service digital agency focused on driving leads and revenue for businesses through a range of digital marketing services",
+      "modalTextB" : "I developed Gotogrow.gr to be a robust digital agency platform aimed at driving leads and revenue for businesses. Ofcourse, I ensured the site is responsive, user-friendly, and visually appealing. I integrated various digital marketing tools and features to help Gotogrow enhance their online presence and achieve their marketing goals.",
+      "modalStacks": ["Wordpress", "Javascript/jQuery", "Ajax","Scss", "PHP"],
+      "designLink": ""
+    },
+    "7": {
+      "mainText": "BlooCollection.gr offers high-quality, uniquely designed clothing, jewelry, and accessories, all made in Greece.",
+      "badgeText": "E-Commerce",
+      "buttonText": "About bloocollection.gr",
+      "imgSrc" : "https://fotissam.github.io/fossam-portfolio/images/bloocollectiongr_thumb.jpg",
+      "imageAlt": "case of bloocollection",
+      "badgeColor": "pink",
+      "websiteLink": "https://gotogrow.gr/",
+      "modalTextA" : "BlooCollection.gr offers high-quality, uniquely designed clothing, jewelry, and accessories, all made in Greece.",
+      "modalTextB" : "I developed BlooCollection.gr to showcase these unique products with a visually appealing and user-friendly interface. Using modern web technologies, I ensured the site is responsive and easy to navigate, providing a seamless shopping experience for customers.",
+      "modalStacks": ["Wordpress","Woocommerce", "Javascript/jQuery", "Ajax","Scss", "PHP"],
+      "designLink": ""
     }
   }
