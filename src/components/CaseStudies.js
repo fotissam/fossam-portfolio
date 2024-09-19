@@ -50,6 +50,7 @@ export default function CaseStudies() {
               fontSize={{ base: "1em", md: "1.3em" }}
               align={"center"}
               maxW={"800px"}
+              mb={24}
             >
               Check out my latest projects and see what I've been up to.
             </Text>

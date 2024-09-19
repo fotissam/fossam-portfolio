@@ -1,0 +1,26 @@
+{
+    "1": {
+      "badgeText": "bestsselling",
+      "badgeColor": "orange",
+      "skillText": "Expert WordPress Developer",
+      "skillDesc": "Transform your concept into a high-performing WordPress website. I specialize in optimizing performance and functionality to ensure seamless user experiences."
+    },
+    "2": {
+      "badgeText": "Top Pick",
+      "badgeColor": "teal",
+      "skillText": "E-shop Development",
+      "skillDesc": "I’ll craft an intuitive interface with secure payment gateways using best practises."
+    },
+    "3": {
+      "badgeText": "Highly Rated",
+      "badgeColor": "yellow",
+      "skillText": "Front-End with React",
+      "skillDesc": "Crafting dynamic, responsive web applications with sleek, high-performance user interfaces using React."
+    },
+    "4": {
+      "badgeText": "Trending",
+      "badgeColor": "cyan",
+      "skillText": "Design to HTML",
+      "skillDesc": "Convert your designs into clean, responsive HTML code. I ensure pixel-perfect accuracy and seamless functionality, bringing your visual concepts to life on the web."
+    }
+  }

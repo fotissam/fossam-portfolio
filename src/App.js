@@ -6,6 +6,7 @@ import NavMenu from "./components/NavMenu";
 import CaseStudies from "./components/CaseStudies";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavMenu />
       <HeroSection />
       <CaseStudies />
+      <Skills/>
       <ContactForm />
       <Footer />
     </Box>
